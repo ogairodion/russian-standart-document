@@ -1,0 +1,10 @@
+extends layouts/default
+include helpers/_mixins-default
+include helpers/_mixins-custom
+
+block variables
+  - const title = "Документ"
+
+block content
+  main.main
+    include ../blocks/modules/document/document.pug
